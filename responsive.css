@@ -1,0 +1,14 @@
+@media screen and (max-width: 786px){
+    .sec-4{
+grid-template-columns: 1fr;
+padding: 2rem;
+row-gap: 2rem;
+    }
+    .nav-bar ul li{
+        display: none;
+    }
+    .nav-bar{
+        justify-content: space-around
+        ;
+    }
+}

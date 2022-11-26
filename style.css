@@ -1,0 +1,228 @@
+:root {
+    --black: #313132;
+    --li-fnt: #6e6e73;
+    --da-fnt: #1d1d1f;
+    --nav-fnt: #d6d6d6;
+    --w: #fff;
+    --link: #0066cc;
+    --li-bg: #f5f5f7;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*-----------base------------*/
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+img {
+    width: 100%;
+}
+/*-----------------nav-bar-------------------*/
+.nav-wrap {
+    background-color: var(--black);
+    padding: 10px;
+    justify-content: center;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+}
+
+.nav-bar {
+    width: 980px;
+    justify-content: center;
+    align-items: center;
+}
+.nav-wrap .nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+.nav-bar a {
+    color: var(--nav-fnt);
+    padding: 0 8px;
+}
+
+.nav-wrap .nav-bar ul li a:hover {
+    color: var(--w);
+}
+.nav-wrap .nav-bar  img {
+    width: 12px;
+    
+}
+.nav-wrap .nav-bar ul li a span {
+    font-size: 20px;
+}
+/*--------------adbar--------------*/
+.off-banner {
+    text-align: center;
+    padding: 15px;
+    padding-top: 50px;
+    background-color: var(--li-bg);
+    font-size: 12px;
+}
+.off-banner a {
+    color: var(--link);
+}
+.off-banner a:hover {
+    text-decoration: underline;
+}
+/*---------------------------------------*/
+.i-r-d {
+    transition: 1s ease;
+}
+.i-r-d:hover {
+    transform: scale(1.1);
+}
+.device-container {
+    position: relative;
+    justify-content: center;
+    line-height: 50px;
+    border-radius: 3rem;
+    overflow: hidden;
+}
+.device-container .details {
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    top: 5rem;
+    z-index: 2;
+}
+.device-container .details h2 {
+    font-size: 48px;
+    font-weight: 600;
+}
+.discription p {
+    font-size: 22px;
+}
+.discription ul {
+    justify-content: space-around;
+}
+.discription ul li a {
+    color: var(--link);
+    position: relative;
+    font-size: 18px;
+}
+.discription ul li a::after {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    border: 2px solid;
+    border-color: var(--link) var(--link) transparent transparent;
+    transform: rotate(45deg);
+    top: 5px;
+    right: -10px;
+}
+.discription ul li a:hover {
+    text-decoration: underline;
+}
+
+.sec-1 {
+    padding-top: 1rem;
+    justify-content: center;
+}
+.sec-1 .device-container {
+    width: 570px;
+    overflow: visible;
+}
+.sec-1 .device-container .details {
+    top: 15rem;
+    right: -6rem;
+}
+.sec-2 .device-container {
+    height: 900px;
+}
+.sec-3 .device-container {
+    border-radius: 0;
+}
+.sec-3 .details {
+    top: 12rem;
+}
+.sec-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 1rem;
+}
+.sec-4 .m2-chipset {
+    width: 50px;
+    align-items: center;
+    margin-left: 10px;
+}
+#tv .discription {
+    flex-direction: column;
+}
+.sec-5 {
+    flex-direction: row;
+    overflow-x: scroll;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    position: relative;
+}
+.sec-5 img {
+    width: 80vw;
+    height: auto;
+    border-radius: 3rem;
+    margin-right: 1rem;
+}
+/*---------------footer-----------------*/
+footer{
+    padding:1rem 15rem ;
+}
+footer .over-view{
+    justify-content: space-between;
+    line-height: 25px;
+    padding: 1rem 0;
+
+}
+footer .over-view p{
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--da-fnt);
+}
+footer  a{
+    color: var(--li-fnt);
+    font-size: 12px;
+}
+footer a:hover{
+text-decoration: underline;
+}
+footer .cpy-r{
+    border-top: 1px solid var(--li-fnt);
+    padding: .5rem 0;
+    align-items: center;
+    justify-content: center;
+}
+footer .cpy-r p{
+    margin-right: 15px;
+    font-size: 12px;
+    color: var(--li-fnt);
+}
+footer .cpy-r li{
+    padding-right   : 20px;
+    border-right: 1px solid var(--li-fnt);
+    margin-left: 20px
+}
+footer .cpy-r ul li:nth-child(5){
+    border-color: transparent;
+}
+/*----------------------------------------------*/
